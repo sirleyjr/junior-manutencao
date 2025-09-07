@@ -1,6 +1,9 @@
+
+
 {
-  "name": "junior-manutencoes",
+  "name": "junior-manutencao",
   "version": "1.0.0",
+  "description": "Site da Junior Manutenções Elétricas e Hidráulicas",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

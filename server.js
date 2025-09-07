@@ -4,7 +4,8 @@ const path = require("path");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = 3000;
+// Usa a porta do servidor (Render/Railway) ou 3000 no local
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -40,6 +41,7 @@ app.post("/bookings", (req, res) => {
   res.json({ success: true });
 });
 
+// Aqui usamos a porta correta
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
+  console.log(`🚀 Servidor rodando na porta ${PORT}`);
 });

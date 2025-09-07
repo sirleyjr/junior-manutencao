@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junior Manutenções Elétricas e Hidráulicas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Junior Manutenções Elétricas e Hidráulicas</h1>
+    <p>📞 Contato: <a href="tel:+5514998947739">14 99894-7739</a> - Peruíbe/SP</p>
+  </header>
+
+  <main>
+    <div class="left-panel">
+      <button onclick="mostrarServicos('eletrica')">Elétrica</button>
+      <button onclick="mostrarServicos('hidraulica')">Hidráulica</button>
+      <button onclick="mostrarServicos('outros')">Outros</button>
+      <button onclick="abrirFormularioOrcamentoNovo()">Não encontrou o que procura? Solicite um novo orçamento</button>
+      
+      <div id="lista-servicos"></div>
+    </div>
+
+    <div class="right-panel">
+      <div id="acoes">
+        <button onclick="abrirFormularioOrcamento()">Solicite seu orçamento</button>
+        <button onclick="abrirAgenda()">Agende uma visita</button>
+      </div>
+
+      <div id="formulario-orcamento" class="formulario"></div>
+      <div id="formulario-orcamento-novo" class="formulario"></div>
+      <div id="agenda" class="formulario"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
